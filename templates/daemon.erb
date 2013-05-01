@@ -1,0 +1,6 @@
+service <%= @service_name %>
+{
+<%- @options.each do |key, value| -%>
+<%= key %> = <%= value %>
+<%- end -%>
+}
