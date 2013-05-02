@@ -1,0 +1,6 @@
+service <%= @name %>
+{
+<%- @options.sort.map do |key, value| -%>
+<%= key %> = <%= value %>
+<%- end -%>
+}
